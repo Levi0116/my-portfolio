@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Script pour gérer le retour à l'accueil -->
+    <script>
+        window.addEventListener('pageshow', function(event) {
+            if (event.persisted) {
+                window.location.reload();
+            }
+        });
+    </script>
 </head>
 <body>
-
-    <!-- <div class="transition-screen" id="transitionScreen">...</div> -->
 
     <!-- Scroll Progress -->
     <div class="scroll-progress" id="scrollProgress"></div>
@@ -20,6 +27,38 @@
     <button class="back-to-top" id="backToTop">
         <i class="fas fa-chevron-up"></i>
     </button>
+    
+    <!-- Bouton retour à l'accueil -->
+    <button class="home-button" id="homeButton" onclick="window.location.href='../index.html'" style="position: fixed; bottom: 8rem; right: 2rem; width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; z-index: 100; box-shadow: var(--shadow); border: none; color: white; font-size: 1.2rem; cursor: pointer; transition: all 0.3s ease;">
+        <i class="fas fa-home"></i>
+    </button>
+    
+    <style>
+        .home-button:hover {
+            transform: scale(1.1) rotate(360deg);
+            box-shadow: 0 15px 30px rgba(255, 107, 139, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .home-button {
+                bottom: 7rem;
+                right: 1rem;
+                width: 45px;
+                height: 45px;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .home-button {
+                bottom: 6rem;
+                right: 0.8rem;
+                width: 40px;
+                height: 40px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 
     <!-- Theme Toggle -->
     <button class="theme-toggle" id="themeToggle">
@@ -48,6 +87,10 @@
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#" id="cvButton">Mon CV</a></li>
+                <!-- Lien pour retourner à l'accueil -->
+                <li><a href="../index.html" class="home-link" style="color: var(--primary); border: 1px solid var(--primary); border-radius: 50px; padding: 0.5rem 1.2rem;">
+                    <i class="fas fa-home"></i> Accueil
+                </a></li>
             </ul>
         </div>
     </nav>
@@ -921,6 +964,12 @@
                             Télécharger mon CV
                         </a>
                     </div>
+                    
+                    <div style="margin-top: 1rem;">
+                        <a href="../index.html" style="color: white; text-decoration: none; border: 1px solid rgba(255,255,255,0.3); padding: 0.5rem 1rem; border-radius: 50px; display: inline-block;">
+                            <i class="fas fa-home"></i> Retour à l'accueil
+                        </a>
+                    </div>
                 </div>
                 
                 <div>
@@ -975,5 +1024,46 @@
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/gallery.js"></script>
+    
+    <!-- Script pour gérer le retour à l'accueil -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gestion du bouton home flottant
+            const homeButton = document.getElementById('homeButton');
+            if (homeButton) {
+                homeButton.addEventListener('click', function() {
+                    document.body.style.transition = 'opacity 0.3s ease';
+                    document.body.style.opacity = '0';
+                    
+                    setTimeout(() => {
+                        window.location.href = '../index.html';
+                    }, 300);
+                });
+            }
+            
+            // Gestion des liens de retour à l'accueil
+            const homeLinks = document.querySelectorAll('a[href="../index.html"], .home-link');
+            homeLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const href = this.getAttribute('href');
+                    
+                    document.body.style.transition = 'opacity 0.3s ease';
+                    document.body.style.opacity = '0';
+                    
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 300);
+                });
+            });
+            
+            // Animation d'entrée
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.5s ease';
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
 </body>
 </html>

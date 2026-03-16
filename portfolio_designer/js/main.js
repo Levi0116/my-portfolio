@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Forcer le rechargement de la page d'accueil lors du retour
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            window.location.reload();
+        }
+    });
+
 // ========== CUSTOM CURSOR ANIMATION ==========
 const cursor = document.querySelector('.cursor');
 const cursorDot = document.querySelector('.cursor-dot');

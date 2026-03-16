@@ -983,7 +983,7 @@
             background: linear-gradient(135deg, var(--design-primary), var(--design-secondary));
         }
         
-        /* Responsive */
+        /* ===== RESPONSIVE POUR SMARTPHONES ===== */
         @media (max-width: 768px) {
             .split-screen {
                 flex-direction: column;
@@ -995,52 +995,167 @@
             }
             
             .side-text {
-                top: 30%;
+                top: 25%;
             }
             
             .main-text {
-                font-size: clamp(2rem, 6vw, 3rem);
+                font-size: clamp(1.8rem, 8vw, 2.5rem);
+            }
+            
+            .sub-text {
+                font-size: clamp(0.9rem, 4vw, 1.2rem);
             }
             
             .yinyang-container {
                 bottom: 2%;
-                width: min(250px, 70vw);
-                height: min(250px, 70vh);
+                width: min(200px, 60vw);
+                height: min(200px, 60vh);
             }
             
             .yinyang {
-                width: min(200px, 50vw);
-                height: min(200px, 50vh);
+                width: min(180px, 45vw);
+                height: min(180px, 45vh);
             }
             
             .circle-content {
-                padding: 8px 16px;
+                padding: 5px 10px;
             }
             
             .circle-icon {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             
             .circle-subtitle {
-                font-size: 0.8rem;
+                font-size: 0.6rem;
             }
             
             .instruction {
-                bottom: 10px;
-                left: 10px;
-                padding: 8px 15px;
+                top: auto;
+                bottom: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
+                padding: 8px 12px;
                 font-size: 0.8rem;
+                text-align: center;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .instruction::before {
+                font-size: 1.2rem;
             }
             
             .theme-selector {
                 top: 10px;
                 right: 10px;
-                padding: 8px 12px;
+                bottom: auto;
+                padding: 5px 10px;
+            }
+            
+            .theme-selector label {
+                font-size: 0.8rem;
             }
             
             .theme-btn {
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
+            }
+            
+            .floating-element {
+                transform: scale(0.6);
+            }
+            
+            /* Masquer certains éléments sur mobile pour éviter l'encombrement */
+            .code-snippet, .terminal-icon, .artboard, .color-palette,
+            .wireframe, .cube-3d, .chart-icon, .ai-icon, .server-icon,
+            .git-icon, .database-icon, .cloud-icon {
+                display: none;
+            }
+            
+            /* Garder quelques éléments essentiels */
+            .computer-icon, .robot-icon, .paintbrush, .pen-tool,
+            .gradient-circle, .star-icon {
+                display: block;
+                transform: scale(0.5);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .main-text {
+                font-size: clamp(1.5rem, 7vw, 2rem);
+            }
+            
+            .sub-text {
+                font-size: clamp(0.8rem, 3.5vw, 1rem);
+            }
+            
+            .yinyang-container {
+                width: min(150px, 55vw);
+                height: min(150px, 55vh);
+            }
+            
+            .yinyang {
+                width: min(140px, 40vw);
+                height: min(140px, 40vh);
+            }
+            
+            .circle-icon {
+                font-size: 1.2rem;
+            }
+            
+            .circle-subtitle {
+                font-size: 0.5rem;
+            }
+            
+            .instruction {
+                font-size: 0.7rem;
+                padding: 6px 10px;
+            }
+            
+            .instruction::before {
+                font-size: 1rem;
+            }
+            
+            .instruction-badge {
+                font-size: 0.6rem;
+                padding: 2px 6px;
+            }
+            
+            .theme-selector {
+                padding: 3px 8px;
+            }
+            
+            .theme-selector label {
+                font-size: 0.7rem;
+            }
+            
+            .theme-btn {
+                width: 20px;
+                height: 20px;
+            }
+            
+            .computer-icon, .robot-icon, .paintbrush, .pen-tool,
+            .gradient-circle, .star-icon {
+                transform: scale(0.4);
+            }
+        }
+        
+        /* Pour les très petits écrans */
+        @media (max-width: 360px) {
+            .yinyang-container {
+                width: min(120px, 50vw);
+                height: min(120px, 50vh);
+            }
+            
+            .yinyang {
+                width: min(110px, 35vw);
+                height: min(110px, 35vh);
+            }
+            
+            .instruction {
+                font-size: 0.6rem;
+                padding: 4px 8px;
             }
         }
     </style>
@@ -1369,12 +1484,35 @@
             }, 200);
             
             // ===== PRÉCHARGEMENT =====
-            ['portfolio-dev.html', 'portfolio-design.html'].forEach(href => {
+            ['portfolio_dev/portfolio-dev.html', 'portfolio_designer/portfolio-design.html'].forEach(href => {
                 const link = document.createElement('link');
                 link.rel = 'prefetch';
                 link.href = href;
                 document.head.appendChild(link);
             });
+            
+            // ===== CORRECTION POUR LE PROBLÈME DE CACHE =====
+            // Forcer le rechargement de la page lors du retour avec le bouton back
+            window.addEventListener('pageshow', function(event) {
+                if (event.persisted) {
+                    window.location.reload();
+                }
+            });
+            
+            // Alternative pour les navigateurs plus anciens
+            window.addEventListener('load', function() {
+                if (performance && performance.navigation && performance.navigation.type === 2) {
+                    window.location.reload();
+                }
+            });
+            
+            // Détection moderne
+            if (window.performance && window.performance.getEntriesByType) {
+                const navEntries = performance.getEntriesByType('navigation');
+                if (navEntries.length > 0 && navEntries[0].type === 'back_forward') {
+                    window.location.reload();
+                }
+            }
         })();
     </script>
 </body>

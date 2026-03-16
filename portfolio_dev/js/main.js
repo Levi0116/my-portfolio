@@ -22,6 +22,13 @@ function initNavigation() {
             navbar.classList.remove('scrolled');
         }
     });
+
+    // Forcer le rechargement de la page d'accueil lors du retour
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            window.location.reload();
+        }
+    });
     
     // Mobile menu toggle
     if (menuToggle) {
