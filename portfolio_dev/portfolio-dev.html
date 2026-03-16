@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Levi KOUAME - Développeur Full Stack & Data</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Joel Levi</a>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#innovation">IA & Innovation</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-particles"></div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <!-- Chemin vers votre dossier images/profile/ -->
+                        <img src="images/profile/profil.jpg" alt="Joel Levi KOUAME" onerror="this.src='https://via.placeholder.com/200x200/2563eb/ffffff?text=JLK'">
+                    </div>
+                    <div class="profile-name">
+                        <h1>Joel Levi <span class="gradient-text">KOUAME</span></h1>
+                        <div class="profile-title">
+                            <i class="fas fa-code"></i>
+                            <span>Développeur Full Stack & Data</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="hero-description">
+                    Développeur passionné avec une double compétence en développement d'applications et en analyse de données. 
+                    Actuellement en Master MBDS (Mobiquité, Big Data et Système) à l'ESATIC, je conçois des solutions innovantes 
+                    alliant performance technique et expérience utilisateur optimale.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        Voir mes projets
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        Me contacter
+                    </a>
+                    <a href="assets/CV_KOUAME_Levi_fr.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i>
+                        CV PDF
+                    </a>
+                </div>
+                
+                <div class="contact-info-header">
+                    <a href="mailto:kouamejoel0116@gmail.com" class="contact-chip">
+                        <i class="fas fa-envelope"></i>
+                        kouamejoel0116@gmail.com
+                    </a>
+                    <a href="tel:+2250140684967" class="contact-chip">
+                        <i class="fas fa-phone"></i>
+                        +225 0140684967
+                    </a>
+                    <a href="https://github.com/levi0116" target="_blank" class="contact-chip">
+                        <i class="fab fa-github"></i>
+                        levi0116
+                    </a>
+                    <a href="https://linkedin.com/in/fevy-joel-levi-kouame" target="_blank" class="contact-chip">
+                        <i class="fab fa-linkedin"></i>
+                        Fevy Joel Levi Kouame
+                    </a>
+                </div>
+            </div>
+            
+            <div class="code-visual">
+                <div class="code-header">
+                    <div class="code-dot dot-red"></div>
+                    <div class="code-dot dot-yellow"></div>
+                    <div class="code-dot dot-green"></div>
+                </div>
+                <div class="code-content">
+                    <div class="code-line" data-line="1">
+                        <span class="code-keyword">class</span> <span class="code-function">Developer</span>:
+                    </div>
+                    <div class="code-line" data-line="2">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">def</span> <span class="code-function">__init__</span>(self):
+                    </div>
+                    <div class="code-line" data-line="3">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="code-string">"Joel Levi"</span>
+                    </div>
+                    <div class="code-line" data-line="4">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.role = <span class="code-string">"Full Stack & Data"</span>
+                    </div>
+                    <div class="code-line" data-line="5">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.skills = [<span class="code-string">"Python"</span>, <span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"SQL"</span>, <span class="code-string">"Java"</span>, <span class="code-string">"Three.js"</span>]
+                    </div>
+                    <div class="code-line" data-line="6">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.passion = <span class="code-string">"IA & Data Science"</span>
+                    </div>
+                    <div class="code-line" data-line="7">
+                        <span class="code-comment"># Construire l'avenir, une ligne de code à la fois</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Expertise Technique -->
+    <section class="expertise" id="expertise">
+        <div class="container">
+            <div class="section-title animate">
+                <span class="section-subtitle">Compétences</span>
+                <h2>Expertise <span class="gradient-text">Technique</span></h2>
+                <p>Un large éventail de compétences pour des solutions complètes</p>
+            </div>
+            
+            <div class="expertise-grid">
+                <!-- Backend -->
+                <div class="expertise-card animate">
+                    <div class="expertise-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="expertise-title">Backend</h3>
+                    <p>Développement d'APIs robustes et d'applications serveur scalables</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Python</span>
+                        <span class="expertise-tag">Node.js</span>
+                        <span class="expertise-tag">Django</span>
+                        <span class="expertise-tag">Flask</span>
+                    </div>
+                </div>
+                
+                <!-- Frontend -->
+                <div class="expertise-card animate">
+                    <div class="expertise-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="expertise-title">Frontend</h3>
+                    <p>Interfaces modernes, réactives et expériences utilisateur fluides</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">HTML/CSS</span>
+                        <span class="expertise-tag">JavaScript</span>
+                        <span class="expertise-tag">React</span>
+                        <span class="expertise-tag">Vue.js</span>
+                        <span class="expertise-tag">Bootstrap</span>
+                    </div>
+                </div>
+                
+                <!-- Base de données -->
+                <div class="expertise-card animate">
+                    <div class="expertise-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="expertise-title">Bases de Données</h3>
+                    <p>Modélisation, optimisation et gestion de données relationnelles et NoSQL</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">MySQL</span>
+                        <span class="expertise-tag">SQL</span>
+                        <span class="expertise-tag">MongoDB</span>
+                        <span class="expertise-tag">SQLite</span>
+                    </div>
+                </div>
+                
+                <!-- Analyse & Conception -->
+                <div class="expertise-card animate">
+                    <div class="expertise-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="expertise-title">Analyse & Conception</h3>
+                    <p>Méthodologies et outils pour une architecture logicielle solide</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">UML</span>
+                        <span class="expertise-tag">MERISE</span>
+                        <span class="expertise-tag">Design Patterns</span>
+                    </div>
+                </div>
+                
+                <!-- Intelligence Artificielle -->
+                <div class="expertise-card animate">
+                    <div class="expertise-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="expertise-title">Intelligence Artificielle</h3>
+                    <p>Solutions intelligentes basées sur les données et l'apprentissage automatique</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Data Science</span>
+                        <span class="expertise-tag">Machine Learning</span>
+                        <span class="expertise-tag">Deep Learning</span>
+                        <span class="expertise-tag">NLP</span>
+                        <span class="expertise-tag">Computer Vision</span>
+                    </div>
+                </div>
+                
+                <!-- 3D & Modélisation -->
+                <div class="expertise-card animate">
+                    <div class="expertise-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 class="expertise-title">3D & Modélisation</h3>
+                    <p>Visualisation 3D et applications interactives dans le navigateur</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Three.js</span>
+                        <span class="expertise-tag">JavaScript</span>
+                        <span class="expertise-tag">WebGL</span>
+                        <span class="expertise-tag">Mapbox</span>
+                        <span class="expertise-tag">GIS</span>
+                    </div>
+                </div>
+                
+                <!-- Langages de Programmation -->
+                <div class="expertise-card animate">
+                    <div class="expertise-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3 class="expertise-title">Langages</h3>
+                    <p>Maîtrise de multiples langages pour différents contextes</p>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Python</span>
+                        <span class="expertise-tag">C</span>
+                        <span class="expertise-tag">Java</span>
+                        <span class="expertise-tag">JavaScript</span>
+                        <span class="expertise-tag">SQL</span>
+                        <span class="expertise-tag">HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projets Remarquables -->
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-title animate">
+                <span class="section-subtitle">Réalisations</span>
+                <h2>Projets <span class="gradient-text">Remarquables</span></h2>
+                <p>Des solutions concrètes qui répondent à des besoins réels</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Projet 1 - Gestion Administrative -->
+                <div class="project-card animate">
+                    <div class="project-header">
+                        <div class="project-category">Application Desktop</div>
+                        <div class="project-title">Générateur Automatique de Documents</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Système complet de génération automatique de documents administratifs (contrats, conventions, attestations) avec interface graphique intuitive et templates personnalisables.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">PyQt5</span>
+                            <span class="tech-badge">SQLite</span>
+                            <span class="tech-badge">ReportLab</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/levi0116/gestion-documents-auto" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Voir le code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 - Gestion de Stagiaires -->
+                <div class="project-card animate">
+                    <div class="project-header">
+                        <div class="project-category">Application de Gestion</div>
+                        <div class="project-title">STAGIAIRE - Gestion de stagiaires</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Application complète de gestion des stagiaires en entreprise : suivi des présences, évaluations, conventions, génération de rapports et tableau de bord administratif.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">PyQt5</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Matplotlib</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/levi0116/stagiaire-app" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Voir le code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 - Gestion Hôtelière -->
+                <div class="project-card animate">
+                    <div class="project-header">
+                        <div class="project-category">Site Web</div>
+                        <div class="project-title">Gestion d'Hôtel</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Site web complet de gestion hôtelière : réservations en ligne, gestion des chambres, facturation, tableau de bord administrateur et interface client intuitive.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML/CSS</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Django</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/levi0116/gestion-hotel" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Voir le code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 4 - E-commerce -->
+                <div class="project-card animate">
+                    <div class="project-header">
+                        <div class="project-category">Site E-commerce</div>
+                        <div class="project-title">Boutique en Ligne</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Plateforme e-commerce complète avec catalogue produits, panier d'achat, paiement sécurisé, gestion des commandes et espace client personnalisé.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML/CSS</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Django</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Stripe</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/levi0116/ecommerce-site" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Voir le code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 5 - Projet Autoroute du Nord -->
+                <div class="project-card animate">
+                    <div class="project-header">
+                        <div class="project-category">Visualisation 3D</div>
+                        <div class="project-title">Projet Autoroute du Nord</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Modélisation et visualisation 3D interactive du tracé de l'autoroute du Nord avec données géospatiales, intégration cartographique et animations de parcours.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Three.js</span>
+                            <span class="tech-badge">Mapbox</span>
+                            <span class="tech-badge">HTML/CSS</span>
+                            <span class="tech-badge">GeoJSON</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/levi0116/autoroute-3d" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Voir le code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Innovation par l'IA -->
+    <section class="innovation" id="innovation">
+        <div class="container">
+            <div class="section-title animate">
+                <span class="section-subtitle">Intelligence Artificielle</span>
+                <h2>Innovation par <span class="gradient-text">l'IA</span></h2>
+                <p>Explorer les possibilités offertes par l'intelligence artificielle</p>
+            </div>
+            
+            <div class="innovation-grid">
+                <div class="innovation-card animate">
+                    <div class="innovation-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="innovation-title">Big Data & Analyse Avancée</h3>
+                    <p class="innovation-description">
+                        Traitement et analyse de grands volumes de données pour en extraire des insights pertinents et prendre des décisions éclairées.
+                    </p>
+                </div>
+                
+                <div class="innovation-card animate">
+                    <div class="innovation-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="innovation-title">IA Générative</h3>
+                    <p class="innovation-description">
+                        Création de contenu original (texte, image, code) à l'aide de modèles génératifs avancés pour automatiser et enrichir les créations.
+                    </p>
+                </div>
+                
+                <div class="innovation-card animate">
+                    <div class="innovation-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="innovation-title">Machine Learning & Deep Learning</h3>
+                    <p class="innovation-description">
+                        Développement de modèles prédictifs et de systèmes d'apprentissage pour l'analyse de données complexes et la prise de décision automatisée.
+                    </p>
+                </div>
+                
+                <div class="innovation-card animate">
+                    <div class="innovation-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 class="innovation-title">Traitement du Langage Naturel (NLP)</h3>
+                    <p class="innovation-description">
+                        Analyse et compréhension du langage humain pour créer des interfaces conversationnelles et des systèmes d'extraction d'information.
+                    </p>
+                </div>
+                
+                <div class="innovation-card animate">
+                    <div class="innovation-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="innovation-title">Vision par Ordinateur</h3>
+                    <p class="innovation-description">
+                        Technologies de reconnaissance d'images, de détection d'objets et d'analyse vidéo pour des applications innovantes.
+                    </p>
+                </div>
+                
+                <div class="innovation-card animate">
+                    <div class="innovation-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="innovation-title">Gaming & Simulation</h3>
+                    <p class="innovation-description">
+                        Création d'environnements de jeu et de simulation utilisant des techniques d'IA pour des expériences immersives.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Parcours -->
+    <section class="parcours" id="parcours">
+        <div class="container">
+            <div class="section-title animate">
+                <span class="section-subtitle">Formation</span>
+                <h2>Mon <span class="gradient-text">Parcours</span></h2>
+                <p>Un cheminement académique tourné vers l'innovation</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item animate">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-title">Master 1 MBDS</div>
+                        <div class="timeline-subtitle">ESATIC</div>
+                        <p class="timeline-description">
+                            Master en Mobiquité, Big Data et Système. Spécialisation en大数据, systèmes mobiles et architectures distribuées.
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item animate">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-title">Licence en Informatique Décisionnel</div>
+                        <div class="timeline-subtitle">Informatique de Gestion</div>
+                        <p class="timeline-description">
+                            Formation en analyse de données, systèmes d'information décisionnels et business intelligence.
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item animate">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-title">BTS Informatique Développeur d'Applications</div>
+                        <div class="timeline-subtitle">HETEC</div>
+                        <p class="timeline-description">
+                            Formation approfondie en développement logiciel, bases de données et génie logiciel.
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title animate">
+                <span class="section-subtitle">Contact</span>
+                <h2>Travaillons <span class="gradient-text">Ensemble</span></h2>
+                <p>Discutons de votre projet et créons quelque chose d'exceptionnel</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info animate">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:kouamejoel0116@gmail.com">kouamejoel0116@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Téléphone / WhatsApp</h3>
+                            <p>
+                                <a href="https://wa.me/2250140684967">+225 0140684967</a> / 
+                                <a href="https://wa.me/2250140684967">0707617288</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/levi0116" target="_blank">github.com/levi0116</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/fevy-joel-levi-kouame-34b496250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Fevy Joel Levi Kouame</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/levi0116" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/fevy-joel-levi-kouame-34b496250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/1GpmksQmVg/" target="_blank" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form animate" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" class="form-control" placeholder="Votre nom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="votre@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" class="form-control" placeholder="Sujet de votre message" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Décrivez votre projet..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">Joel Levi KOUAME</div>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                        Développeur Full Stack & Data, passionné par la création de solutions innovantes alliant performance technique et intelligence artificielle.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 style="color: white; margin-bottom: 1.5rem;">Expertise</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.8rem;">→ Développement Web & Mobile</li>
+                        <li style="margin-bottom: 0.8rem;">→ Big Data & Analytics</li>
+                        <li style="margin-bottom: 0.8rem;">→ Intelligence Artificielle</li>
+                        <li style="margin-bottom: 0.8rem;">→ Applications Desktop</li>
+                        <li style="margin-bottom: 0.8rem;">→ Visualisation 3D</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 style="color: white; margin-bottom: 1.5rem;">Contact Rapide</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 0.5rem;">
+                        <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i> kouamejoel0116@gmail.com
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 0.5rem;">
+                        <i class="fas fa-phone" style="margin-right: 0.5rem;"></i> +225 0140684967
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        <i class="fab fa-github" style="margin-right: 0.5rem;"></i> levi0116
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Joel Levi KOUAME - Développeur Full Stack & Data. Tous droits réservés.</p>
+                <p style="margin-top: 0.5rem;">Construire l'avenir, une ligne de code à la fois</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

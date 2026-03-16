@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOUAME Fevy Joel Levi - Digital & Creative Designer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- <div class="transition-screen" id="transitionScreen">...</div> -->
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">KFJL Design</a>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#tools">Outils & Dev</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="cvButton">Mon CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>KOUAME Fevy Joel Levi</h1>
+                <h2>Digital & Creative Designer</h2>
+                <p class="hero-description">
+                    Diplômé d'une licence en Informatique de Gestion et actuellement en Master Mobiquité, Big Data et Système à l'ESATIC. Passionné par le design digital et l'infographie, je crée des expériences visuelles captivantes et innovantes qui marquent les esprits.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i>
+                        Voir mes projets
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Me contacter
+                    </a>
+                    <a href="#" class="btn btn-cv" id="heroCvButton">
+                        <i class="fas fa-file-pdf"></i>
+                        Voir mon CV
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="25">0</span>
+                        <span class="stat-label">Projets design</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-label">Années d'expérience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span>
+                        <span class="stat-label">Clients satisfaits</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="images/hero/profil.jpg" alt="KOUAME Fevy Joel Levi - Digital Designer" onerror="this.src='https://via.placeholder.com/400x400/FF6B8B/ffffff?text=KFJL+Design'">
+                
+                <div class="floating-element" style="top: -20px; left: -20px; width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), var(--primary-light)); border-radius: 50%;"></div>
+                <div class="floating-element" style="bottom: 20px; right: -20px; width: 40px; height: 40px; background: linear-gradient(135deg, var(--secondary), #2ed573); border-radius: 50%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title animate">
+                <h2>À Propos de Moi</h2>
+                <p class="section-subtitle">
+                    Passionné par le design digital et l'informatique, je transforme les idées en visuels impactants.
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text animate">
+                    <p><strong>Digital & Creative Designer</strong> spécialisé dans la création d'identités visuelles, d'interfaces utilisateur et de designs web. Mon approche combine créativité, stratégie et technique pour produire des designs qui non seulement plaisent à l'œil mais qui atteignent aussi leurs objectifs.</p>
+                    <p>Je maîtrise les outils de design modernes et comprends les principes fondamentaux de l'UI/UX, de la typographie et de la théorie des couleurs pour créer des expériences cohérentes et mémorables.</p>
+                    <p>Mon objectif : créer des designs qui racontent une histoire, qui engagent l'utilisateur et qui renforcent l'identité de la marque.</p>
+                    
+                    <div class="personal-info">
+                        <h3>Informations Personnelles</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Côte d'Ivoire</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-user"></i>
+                                <span>22 ans</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Licence Informatique de Gestion</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-university"></i>
+                                <span>Master MBDS - ESATIC</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>Kouamejoel0116@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+225 0140684967</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="animate">
+                    <h3>Mes Compétences</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">UI/UX Design</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Design Graphique</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Web Design</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Infographie</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Tools & Development Section -->
+    <section class="tools-section" id="tools">
+        <div class="container">
+            <div class="section-title animate">
+                <h2 style="color: white;">Outils & Développement</h2>
+                <p style="color: rgba(255, 255, 255, 0.8); max-width: 600px; margin: 0 auto;">
+                    Technologies, langages et outils que j'utilise pour mes créations
+                </p>
+            </div>
+            
+            <!-- Catégories Outils -->
+            <div class="tools-categories animate">
+                <button class="category-btn active" data-category="all">Tout voir</button>
+                <button class="category-btn" data-category="langages">Langages</button>
+                <button class="category-btn" data-category="outils">Outils</button>
+                <button class="view-toggle-btn" id="toolsToggle">
+                    <i class="fas fa-th-large"></i> Afficher tout
+                </button>
+            </div>
+            
+            <!-- Conteneur principal -->
+            <div class="tools-wrapper">
+                <!-- Carrousel Outils -->
+                <div class="tools-carousel-container">
+                    <button class="carousel-nav carousel-prev" id="toolsPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="tools-carousel" id="toolsCarousel">
+                        <!-- Langages de Programmation -->
+                        <div class="tool-card" data-category="langages">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fab fa-html5"></i>
+                                    </div>
+                                    <div class="tool-name">HTML5</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>HTML5</h4>
+                                    <p>Structure sémantique et accessible pour le web moderne</p>
+                                    <span class="tool-experience">3+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="langages">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <div class="tool-name">CSS3</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>CSS3</h4>
+                                    <p>Styles avancés, animations et design responsive</p>
+                                    <span class="tool-experience">3+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="langages">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fab fa-js"></i>
+                                    </div>
+                                    <div class="tool-name">JavaScript</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>JavaScript</h4>
+                                    <p>Interactivité et dynamisme pour applications web</p>
+                                    <span class="tool-experience">2+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="langages">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <div class="tool-name">Python</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>Python</h4>
+                                    <p>Développement backend et analyse de données</p>
+                                    <span class="tool-experience">2+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="langages">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fab fa-java"></i>
+                                    </div>
+                                    <div class="tool-name">Java</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>Java</h4>
+                                    <p>Applications robustes et multiplateformes</p>
+                                    <span class="tool-experience">1+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="langages">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="tool-name">MySQL</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>MySQL</h4>
+                                    <p>Gestion de bases de données relationnelles</p>
+                                    <span class="tool-experience">2+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="langages">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fab fa-angular"></i>
+                                    </div>
+                                    <div class="tool-name">Angular</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>Angular</h4>
+                                    <p>Framework pour applications web dynamiques</p>
+                                    <span class="tool-experience">1+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Outils Design & Dev -->
+                        <div class="tool-card" data-category="outils">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fas fa-camera-retro"></i>
+                                    </div>
+                                    <div class="tool-name">Photoshop</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>Adobe Photoshop</h4>
+                                    <p>Retouche photo et création d'images</p>
+                                    <span class="tool-experience">3+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="outils">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fas fa-paint-brush"></i>
+                                    </div>
+                                    <div class="tool-name">Illustrator</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>Adobe Illustrator</h4>
+                                    <p>Création vectorielle et illustration</p>
+                                    <span class="tool-experience">3+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="outils">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fas fa-pen-fancy"></i>
+                                    </div>
+                                    <div class="tool-name">Figma</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>Figma</h4>
+                                    <p>Design collaboratif et prototypage</p>
+                                    <span class="tool-experience">2+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="outils">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <div class="tool-name">Canva</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>Canva</h4>
+                                    <p>Design rapide et templates créatifs</p>
+                                    <span class="tool-experience">3+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="outils">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="tool-name">VS Code</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>Visual Studio Code</h4>
+                                    <p>Éditeur de code moderne et extensible</p>
+                                    <span class="tool-experience">3+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="outils">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="tool-name">GitHub</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>GitHub</h4>
+                                    <p>Gestion de versions et collaboration</p>
+                                    <span class="tool-experience">2+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="outils">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fas fa-window-maximize"></i>
+                                    </div>
+                                    <div class="tool-name">Bootstrap</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>Bootstrap Studio</h4>
+                                    <p>Framework CSS pour designs responsives</p>
+                                    <span class="tool-experience">2+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="outils">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fas fa-film"></i>
+                                    </div>
+                                    <div class="tool-name">Premiere Pro</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>Adobe Premiere Pro</h4>
+                                    <p>Montage vidéo professionnel</p>
+                                    <span class="tool-experience">2+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card" data-category="outils">
+                            <div class="tool-card-inner">
+                                <div class="tool-card-front">
+                                    <div class="tool-logo">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+                                    <div class="tool-name">After Effects</div>
+                                </div>
+                                <div class="tool-card-back">
+                                    <h4>After Effects</h4>
+                                    <p>Effets visuels et motion design</p>
+                                    <span class="tool-experience">1+ ans</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-nav carousel-next" id="toolsNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <!-- Indicateurs de pagination -->
+                <div class="carousel-dots" id="toolsDots"></div>
+                
+                <!-- Message quand aucune catégorie -->
+                <div class="no-results" id="toolsNoResults" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <p>Aucun outil trouvé dans cette catégorie</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-title animate">
+                <h2>Mes Projets</h2>
+                <p class="section-subtitle">
+                    Une sélection de mes créations les plus récentes
+                </p>
+            </div>
+            
+            <div class="projects-filter animate">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="design">Design Graphique</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Projet 1 - HOTEL -->
+                <div class="project-card animate" data-category="web">
+                    <div class="project-image">
+                        <div class="gallery-container">
+                            <!-- Généré dynamiquement par gallery.js -->
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn btn-primary" onclick="openProjectGallery(1)">
+                                <i class="fas fa-expand"></i>
+                                Voir les détails
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Application Web</div>
+                        <h3 class="project-title">Gestion de Chambre d'Hôtel</h3>
+                        <p class="project-description">Application web complète de gestion d'hôtel avec réservation en ligne, gestion des chambres et tableau de bord administratif.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 - AFFICHES -->
+                <div class="project-card animate" data-category="design">
+                    <div class="project-image">
+                        <div class="gallery-container">
+                            <!-- Généré dynamiquement par gallery.js -->
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn btn-primary" onclick="openProjectGallery(2)">
+                                <i class="fas fa-expand"></i>
+                                Voir les détails
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Design Graphique</div>
+                        <h3 class="project-title">Collection d'Affiches</h3>
+                        <p class="project-description">Série d'affiches événementielles et promotionnelles avec des typographies créatives et des palettes de couleurs audacieuses.</p>
+                        <div class="project-tags">
+                            <span class="tag">Illustrator</span>
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Typographie</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 - LOGOS -->
+                <div class="project-card animate" data-category="design">
+                    <div class="project-image">
+                        <div class="gallery-container">
+                            <!-- Généré dynamiquement par gallery.js -->
+                        </div>
+                        <div class="project-overlay">
+                            <button class="btn btn-primary" onclick="openProjectGallery(3)">
+                                <i class="fas fa-expand"></i>
+                                Voir les détails
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Identité Visuelle</div>
+                        <h3 class="project-title">Logos & Identité de Marque</h3>
+                        <p class="project-description">Création de logos modernes et de systèmes d'identité visuelle complète pour diverses entreprises et startups.</p>
+                        <div class="project-tags">
+                            <span class="tag">Logo Design</span>
+                            <span class="tag">Branding</span>
+                            <span class="tag">Identité Visuelle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;" class="animate">
+                <a href="#contact" class="btn btn-primary" style="padding: 1rem 2.5rem;">
+                    <i class="fas fa-briefcase"></i>
+                    Voir tous les projets
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Subsection avec catégories -->
+    <section class="skills-subsection" id="skills-sub">
+        <div class="container">
+            <div class="section-title animate">
+                <h2>Mes Compétences</h2>
+                <p class="section-subtitle">
+                    Domaines d'expertise et compétences spécifiques
+                </p>
+            </div>
+            
+            <!-- Catégories Compétences -->
+            <div class="skills-categories animate">
+                <button class="skill-cat-btn active" data-skill-cat="all">Toutes</button>
+                <button class="skill-cat-btn" data-skill-cat="graphique">Design Graphique</button>
+                <button class="skill-cat-btn" data-skill-cat="web">Design Web & Apps</button>
+                <button class="skill-cat-btn" data-skill-cat="multimedia">Design Multimédia</button>
+                <button class="skill-cat-btn" data-skill-cat="3d">Design 3D</button>
+                <button class="view-toggle-btn" id="skillsToggle">
+                    <i class="fas fa-th-large"></i> Afficher tout
+                </button>
+            </div>
+            
+            <!-- Conteneur principal -->
+            <div class="skills-wrapper">
+                <!-- Carrousel Compétences -->
+                <div class="skills-carousel-container">
+                    <button class="carousel-nav carousel-prev" id="skillsPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="skills-carousel" id="skillsCarousel">
+                        <!-- Design Graphique -->
+                        <div class="skill-card-modern" data-skill-cat="graphique">
+                            <div class="skill-card-content">
+                                <div class="skill-icon-modern">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <h3>UI Designer</h3>
+                                <p>Conception d'interfaces utilisateur intuitives et esthétiques</p>
+                                <div class="skill-badge">Design Graphique</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card-modern" data-skill-cat="graphique">
+                            <div class="skill-card-content">
+                                <div class="skill-icon-modern">
+                                    <i class="fas fa-users-cog"></i>
+                                </div>
+                                <h3>UX Designer</h3>
+                                <p>Optimisation de l'expérience utilisateur et parcours client</p>
+                                <div class="skill-badge">Design Graphique</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card-modern" data-skill-cat="graphique">
+                            <div class="skill-card-content">
+                                <div class="skill-icon-modern">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                </div>
+                                <h3>Designer Graphique</h3>
+                                <p>Création d'identités visuelles et supports de communication</p>
+                                <div class="skill-badge">Design Graphique</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Design Web & Applications -->
+                        <div class="skill-card-modern" data-skill-cat="web">
+                            <div class="skill-card-content">
+                                <div class="skill-icon-modern">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h3>Web Designer</h3>
+                                <p>Conception de sites web modernes et responsives</p>
+                                <div class="skill-badge">Design Web & Apps</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card-modern" data-skill-cat="web">
+                            <div class="skill-card-content">
+                                <div class="skill-icon-modern">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h3>UI Designer</h3>
+                                <p>Design d'interfaces pour applications mobiles et web</p>
+                                <div class="skill-badge">Design Web & Apps</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card-modern" data-skill-cat="web">
+                            <div class="skill-card-content">
+                                <div class="skill-icon-modern">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <h3>UX Designer</h3>
+                                <p>Architecture de l'information et tests utilisateurs</p>
+                                <div class="skill-badge">Design Web & Apps</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Design Multimédia -->
+                        <div class="skill-card-modern" data-skill-cat="multimedia">
+                            <div class="skill-card-content">
+                                <div class="skill-icon-modern">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <h3>Monteur Vidéo</h3>
+                                <p>Montage et post-production vidéo professionnelle</p>
+                                <div class="skill-badge">Design Multimédia</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card-modern" data-skill-cat="multimedia">
+                            <div class="skill-card-content">
+                                <div class="skill-icon-modern">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <h3>Créateur de Contenus</h3>
+                                <p>Création de contenu pour réseaux sociaux et marketing</p>
+                                <div class="skill-badge">Design Multimédia</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card-modern" data-skill-cat="multimedia">
+                            <div class="skill-card-content">
+                                <div class="skill-icon-modern">
+                                    <i class="fas fa-photo-video"></i>
+                                </div>
+                                <h3>Designer Multimédia</h3>
+                                <p>Créations interactives et multimédia</p>
+                                <div class="skill-badge">Design Multimédia</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Design 3D -->
+                        <div class="skill-card-modern" data-skill-cat="3d">
+                            <div class="skill-card-content">
+                                <div class="skill-icon-modern">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <h3>Modeleur 3D</h3>
+                                <p>Modélisation d'objets et d'environnements 3D</p>
+                                <div class="skill-badge">Design 3D</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card-modern" data-skill-cat="3d">
+                            <div class="skill-card-content">
+                                <div class="skill-icon-modern">
+                                    <i class="fas fa-shapes"></i>
+                                </div>
+                                <h3>Designer 3D</h3>
+                                <p>Création de concepts et visualisations 3D</p>
+                                <div class="skill-badge">Design 3D</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-nav carousel-next" id="skillsNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <!-- Indicateurs de pagination -->
+                <div class="carousel-dots" id="skillsDots"></div>
+                
+                <!-- Message quand aucune catégorie -->
+                <div class="no-results" id="skillsNoResults" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <p>Aucune compétence trouvée dans cette catégorie</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title animate">
+                <h2>Travaillons Ensemble</h2>
+                <p class="section-subtitle">
+                    Discutons de votre projet et créons quelque chose d'extraordinaire
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info animate">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--text-dark); margin-bottom: 0.25rem;">Email</h3>
+                            <p style="color: var(--text-light);">Kouamejoel0116@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--text-dark); margin-bottom: 0.25rem;">Téléphone</h3>
+                            <p style="color: var(--text-light);">+225 0140684967</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--text-dark); margin-bottom: 0.25rem;">Disponibilité</h3>
+                            <p style="color: var(--text-light);">Freelance - Projets à distance</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 1rem;">
+                        <h3 style="color: var(--text-dark); margin-bottom: 1rem;">Réseaux Sociaux</h3>
+                        <div class="social-links">
+                            <a href="https://wa.me/2250140684967" target="_blank" class="social-link" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/1GpmksQmVg/" target="_blank" class="social-link" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/fevy-joel-levi-kouame-34b496250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://behance.net" target="_blank" class="social-link" title="Behance">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="https://dribbble.com" target="_blank" class="social-link" title="Dribbble">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form animate" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" class="form-control" required placeholder="Votre nom">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" class="form-control" required placeholder="votre@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Type de projet</label>
+                        <select id="subject" class="form-control">
+                            <option value="">Sélectionnez un type</option>
+                            <option value="logo">Logo & Identité</option>
+                            <option value="web">Site Web</option>
+                            <option value="print">Design Print</option>
+                            <option value="uiux">UI/UX Design</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" class="form-control" rows="5" required placeholder="Décrivez votre projet..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Budget approximatif</label>
+                        <input type="text" id="budget" class="form-control" placeholder="Budget prévu">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">KFJL Design</div>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6; margin-bottom: 1.5rem;">
+                        Digital & Creative Designer spécialisé dans la création d'identités visuelles, d'interfaces utilisateur et de designs web innovants.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/2250140684967" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1GpmksQmVg/" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fevy-joel-levi-kouame-34b496250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    
+                    <div style="margin-top: 2rem;">
+                        <a href="#" class="btn btn-cv" id="footerCvButton" style="color: white;">
+                            <i class="fas fa-file-pdf"></i>
+                            Télécharger mon CV
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="color: white; margin-bottom: 1.5rem;">Services</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.8rem;">
+                            <a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition);">
+                                <i class="fas fa-chevron-right" style="margin-right: 0.5rem; font-size: 0.8rem;"></i>
+                                UI/UX Design
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem;">
+                            <a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition);">
+                                <i class="fas fa-chevron-right" style="margin-right: 0.5rem; font-size: 0.8rem;"></i>
+                                Design Graphique
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem;">
+                            <a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition);">
+                                <i class="fas fa-chevron-right" style="margin-right: 0.5rem; font-size: 0.8rem;"></i>
+                                Web Design
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem;">
+                            <a href="#" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: var(--transition);">
+                                <i class="fas fa-chevron-right" style="margin-right: 0.5rem; font-size: 0.8rem;"></i>
+                                Infographie
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 style="color: white; margin-bottom: 1.5rem;">Formation</h3>
+                    <div style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                        <p><strong>Licence</strong> en Informatique de Gestion</p>
+                        <p><strong>Master</strong> en Mobiquité, Big Data et Système</p>
+                        <p><strong>Établissement</strong> : ESATIC</p>
+                        <p><strong>Âge</strong> : 22 ans</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 KOUAME Fevy Joel Levi. Tous droits réservés.</p>
+                <p style="margin-top: 0.5rem;">Digital & Creative Designer - Créateur d'expériences visuelles</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
